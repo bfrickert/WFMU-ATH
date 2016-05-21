@@ -4,7 +4,7 @@
 
 ####sbt
 
-#####Each Scala script in `aggregation_hours/` and `listener_counts` needs to be built with [sbt](http://www.scala-sbt.org/). Ensure that the Spark version and scala version in build.sbt. A surefire way to verify each version is to run `scala-shell` at the command line and note the Spark and Scala versions displayed. 
+Each Scala script in `aggregation_hours/` and `listener_counts` needs to be built with [sbt](http://www.scala-sbt.org/). Ensure that the Spark version and scala version in build.sbt. A surefire way to verify each version is to run `scala-shell` at the command line and note the Spark and Scala versions displayed. 
 
 #####In each directory, run `sbt package`. The Scala will then be compiled into Java that can be submitted to Apache Spark.
 
