@@ -18,7 +18,7 @@ NOTE: `[LOCATION FOR OUTPUT]` should be the name of a directory that does not ye
 
 ####output
 
-The output from each Spark job will be located in the respective `[LOCATION FOR OUTPUT]` and named `part-000000`. To append this to the visualization data sets, run `cat part-000000 >> shiny/[DATASET FILE NAME]`.
+The output from each Spark job will be located in the respective `[LOCATION FOR OUTPUT]` and named `part-00000`. To append this to the visualization data sets, run `cat part-00000 >> shiny/[DATASET FILE NAME]`.
 
 ###SHINY
 
