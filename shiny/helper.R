@@ -7,7 +7,7 @@ library(dplyr)
 library(plotly)
 library(shiny)
 
-aggr <- read.csv('spark.aggregate.csv', sep=',', stringsAsFactors = F, header=T)
+aggr <- read.csv('data/spark.aggregate.csv', sep=',', stringsAsFactors = F, header=T)
 names(aggr) <- c('yr', 'mnth', 'channel', 'sum.ath', 'count.ath')
 aggr <- filter(aggr, !(is.na(yr)) & !grepl('.xsl', channel) & 
                  !grepl('.aac', channel) & !grepl('admin/', channel) & 
@@ -26,7 +26,7 @@ aggr$dt <- paste(aggr$yr, ' - ', aggr$mnth, sep='')
 choices <- unique(paste(aggr$yr, ' - ', aggr$mnth, sep=''))
 choices <- sort(choices, decreasing=T)
 
-counts.by.channel <- read.csv('counts.by.channel.aws.csv', stringsAsFactors = F, header=F)
+counts.by.channel <- read.csv('data/counts.by.channel.aws.csv', stringsAsFactors = F, header=F)
 names(counts.by.channel) <- c('dt', 'hr', 'channel', 'cnt')
 counts.by.channel <- group_by(counts.by.channel, dt, hr, channel) %>% 
   summarise(cnt = sum(cnt)) %>% 

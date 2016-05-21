@@ -22,3 +22,9 @@ The output from each Spark job will be located in the respective `[LOCATION FOR 
 
 ###SHINY
 
+Once R and Shiny Server are installed.
+
+Within the `shiny` directory, run `R -e "shiny::runApp(port=[PORT NUMBER])"` in the background.
+
+See the visualization from `localhost:[PORT NUMBER]`.
+
