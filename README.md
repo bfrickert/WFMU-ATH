@@ -4,9 +4,9 @@
 
 ####sbt
 
-Each Scala script in `aggregation_hours/` and `listener_counts` needs to be built with [sbt](http://www.Scala-sbt.org/). Ensure that the Spark version and Scala version in build.sbt. A surefire way to verify each version is to run `scala-shell` at the command line and note the Spark and Scala versions displayed. 
+Each Scala script in `aggregation_hours/` and `listener_counts` needs to be built into a Spark application with [sbt](http://www.Scala-sbt.org/). Ensure that the correct Spark version and Scala version are registered in each directory's build.sbt file. A surefire way to verify those versions is to run `scala-shell` at the command line and note the Spark and Scala versions displayed. 
 
-In each directory, run `sbt package`. The Scala will then be compiled into Java that can be submitted to Apache Spark.
+In each of the aforementioned directories, run `sbt package`. The Scala scripts will then be compiled into Java that can be submitted to Apache Spark.
 
 ####Spark-submit
 
@@ -22,7 +22,7 @@ The output from each Spark job will be located in the respective `[LOCATION FOR 
 
 ###SHINY
 
-Once R and Shiny Server are installed.
+Once R and Shiny Server are installed, you can host the ATH/Listener Count visualization.
 
 Within the `shiny` directory, run `R -e "shiny::runApp(port=[PORT NUMBER])"` in the background.
 
