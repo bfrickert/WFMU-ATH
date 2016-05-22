@@ -38,3 +38,7 @@ Within the `shiny/` directory, run `R -e "shiny::runApp(port=[PORT NUMBER])"` in
 
 See the visualization from `localhost:[PORT NUMBER]`.
 
+###EMR
+
+In the `emr_scripts` are scala scripts that can be run in AWS EMR. [TODO: a script for spinning up a cluster to run these scripts.]
+
