@@ -32,7 +32,7 @@ NOTE: It is probably a good practice to back up the current dataset files before
 
 ###SHINY
 
-Once R and Shiny Server are installed, you can host the ATH/Listener Count visualization.
+Once [R and Shiny Server](https://www.rstudio.com/products/shiny/download-server/) are installed, you can host the ATH/Listener Count visualization.
 
 Within the `shiny/` directory, run `R -e "shiny::runApp(port=[PORT NUMBER])"` in the background.
 
