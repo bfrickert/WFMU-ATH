@@ -40,5 +40,5 @@ See the visualization from `localhost:[PORT NUMBER]`.
 
 ###EMR
 
-In the `emr_scripts` are scala scripts that can be run in AWS EMR. [TODO: a script for spinning up a cluster to run these scripts.]
+In the `emr_scripts` directory are scala scripts that can be run in AWS EMR. [TODO: a script for spinning up a cluster to run these scripts.]
 
