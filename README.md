@@ -1,5 +1,7 @@
 ##WFMU ATH Aggregation and Listener Count Tool
 
+This repo is comprised of two components: Scala code to be run in Spark and a Shiny R data app.
+
 ###SPARK
 
 ####sbt
